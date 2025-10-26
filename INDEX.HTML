@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="header">
+            <span class="model"></span>
+            <span class="sub-model"></span>
+        </div>
+
+        <div class="solar-panel"></div>
+
+        <div class="screen">
+            <div id="expression-display" class="expression"></div>
+            <div id="result-display" class="result">0</div>
+        </div>
+
+        <div class="buttons">
+            <div class="top-row">
+                <button class="btn fn" data-key="shift">SHIFT</button>
+                <button class="btn fn" data-key="alpha">ALPHA</button>
+                <button class="btn mode">MODE</button>
+                <button class="btn on">ON</button>
+            </div>
+
+            <div class="main-grid">
+                <div class="replay-pad">
+                    <button class="replay-btn up">▲</button>
+                    <button class="replay-btn left">◀</button>
+                    <div class="replay-center"></div>
+                    <button class="replay-btn right">▶</button>
+                    <button class="replay-btn down">▼</button>
+                </div>
+                
+                <button class="btn fn-dark" data-value="solve">CALC</button>
+                <button class="btn fn-dark" data-value="integrate">∫dx</button>
+                <button class="btn fn-dark" data-value="x^-1">x⁻¹</button>
+                <button class="btn fn-dark" data-value="log">log</button>
+                <button class="btn fn-dark" data-value="ln">ln</button>
+                <button class="btn fn-dark" data-value="(">(</button>
+                <button class="btn fn-dark" data-value=")">)</button>
+                <button class="btn fn-dark" data-value="(-)">(-)</button>
+                <button class="btn fn-dark" data-key="deg">° ' "</button>
+                <button class="btn fn-dark" data-value="hyp">hyp</button>
+                <button class="btn fn-dark" data-value="sin(">sin</button>
+                <button class="btn fn-dark" data-value="cos(">cos</button>
+                <button class="btn fn-dark" data-value="tan(">tan</button>
+                <button class="btn fn-dark" data-value="RCL">RCL</button>
+                <button class="btn fn-dark" data-value="ENG">ENG</button>
+                <button class="btn fn-dark" data-value=",">,</button>
+                <button class="btn fn-dark" data-value="%">%</button>
+                <button class="btn fn-dark" data-value="M+">M+</button>
+                <button class="btn fn-dark" data-value="M-">M-</button>
+                <button class="btn fn-dark" data-value="M-=">M=</button>
+
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn op-del" data-key="delete">DEL</button>
+                <button class="btn op-ac" data-key="clear">AC</button>
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn op" data-value="*">×</button>
+                <button class="btn op" data-value="/">÷</button>
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn op" data-value="+">+</button>
+                <button class="btn op" data-value="-">-</button>
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn number" data-value=".">.</button>
+                <button class="btn op" data-value="10*">×10ˣ</button>
+                <button class="btn op" data-value="Ans">Ans</button>
+                <button class="btn op-eq" data-key="=">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
